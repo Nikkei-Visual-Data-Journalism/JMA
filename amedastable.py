@@ -9,7 +9,7 @@ for key in data.keys():
 
 amedas = pd.DataFrame(list_)
 
-amedas['code'] = data.keys()
+amedas['amdno'] = data.keys()
 
 amedas.lat = [x[0] + x[1]/60 for x in amedas.lat]
 
