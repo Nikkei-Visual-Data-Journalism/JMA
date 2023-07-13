@@ -14,3 +14,14 @@ https://www.jma.go.jp/bosai/
 |URL|データ|
 |-|-|
 |[今日](https://www.jma.go.jp/bosai/map.html#5/34.5/137/&contents=heat&term=today)|[heat.csv](https://github.com/Nikkei-Visual-Data-Journalism/JMA/raw/main/heat.csv)|
+
+## 雨雲の動き
+
+https://www.jma.go.jp/bosai/jmatile/data/nowc/yyyymmddHHMMSS/none/yyyymmddHHMMSS/surf/hrpns/{z}/{x}/{y}.png<br>
+yyyymmddHHMMSSは5分単位、UTC(JST+9)表記
+
+## キキクル（危険度分布）
+
+[土砂キキクル](https://www.jma.go.jp/bosai/risk/#elements:land/zoom:5/lat:35.012002/lon:135.000000/colordepth:normal)<br>
+https://www.jma.go.jp/bosai/jmatile/data/risk/yyyymmddHHMMSS/immed0/yyyymmddHHMMSS/surf/land/{z}/{x}/{y}.png
+
