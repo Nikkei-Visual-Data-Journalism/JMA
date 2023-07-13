@@ -29,4 +29,4 @@ https://www.jma.go.jp/bosai/jmatile/data/risk/yyyymmddHHMMSS/immed0/yyyymmddHHMM
 https://www.jma.go.jp/bosai/jmatile/data/risk/yyyymmddHHMMSS/immed0/yyyymmddHHMMSS/surf/inund/{z}/{x}/{y}.png
 
 [洪水キキクル](https://www.jma.go.jp/bosai/risk/#zoom:5/lat:35.012002/lon:135.000000/colordepth:normal/elements:flood)<br>
-https://www.jma.go.jp/bosai/jmatile/data/risk/yyyymmddHHMMSS/immed0/yyyymmddHHMMSS/surf/flood{z}/{x}/{y}.pbf
+https://www.jma.go.jp/bosai/jmatile/data/risk/yyyymmddHHMMSS/immed0/yyyymmddHHMMSS/surf/flood/{z}/{x}/{y}.pbf
