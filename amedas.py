@@ -21,3 +21,15 @@ temp = pd.concat([amedastable,amedas.set_index('amdno')['temp']],axis=1).dropna(
 temp.temp = [x[0] for x in temp.temp]
 
 temp.to_csv('temp.csv',encoding='utf-8-sig')
+
+precipitation1h = pd.concat([amedastable,amedas.set_index('amdno')['precipitation1h']],axis=1).dropna(subset=['precipitation1h'])
+
+precipitation1h.precipitation1h = [x[0] for x in precipitation1h.precipitation1h]
+
+precipitation1h.to_csv('precipitation1h.csv',encoding='utf-8-sig')
+
+precipitation24h = pd.concat([amedastable,amedas.set_index('amdno')['precipitation24h']],axis=1).dropna(subset=['precipitation24h'])
+
+precipitation24h.precipitation24h = [x[0] for x in precipitation24h.precipitation24h]
+
+precipitation24h.to_csv('precipitation24h.csv',encoding='utf-8-sig')
