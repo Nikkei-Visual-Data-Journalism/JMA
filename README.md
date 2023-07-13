@@ -18,7 +18,7 @@ https://www.jma.go.jp/bosai/
 ## 雨雲の動き
 [降水強度](https://www.jma.go.jp/bosai/nowc/#zoom:5/lat:35.012002/lon:135.000000/colordepth:normal/elements:hrpns&slmcs&slmcs_fcst)<br>
 https://www.jma.go.jp/bosai/jmatile/data/nowc/yyyymmddHHMMSS/none/yyyymmddHHMMSS/surf/hrpns/{z}/{x}/{y}.png<br>
-yyyymmddHHMMSSは5分単位、UTC(JST+9)表記
+yyyymmddHHMMSSは5分単位、UTC(JST-9)表記
 
 ## キキクル（危険度分布）
 
