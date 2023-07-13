@@ -1,0 +1,23 @@
+import requests
+import pandas as pd
+from datetime import datetime,timedelta
+
+amedastable = pd.read_csv('https://github.com/Nikkei-Visual-Data-Journalism/JMA/raw/main/amedastable.csv',index_col='amdno')
+
+jst = datetime.today() + timedelta(hours=9)
+
+data = requests.get('https://www.jma.go.jp/bosai/amedas/data/map/'+jst.strftime('%Y%m%d%H') + '0000'+'.json').json()
+
+list_ = []
+for amdno in amedastable.index.astype(str):
+  list_.append(data[amdno])
+
+amedas = pd.DataFrame(list_)
+
+amedas['amdno'] = amedastable.index
+
+temp = pd.concat([amedastable,amedas.set_index('amdno')['temp']],axis=1).dropna(subset=['temp'])
+
+temp.temp = [x[0] for x in temp.temp]
+
+temp.to_csv('temp.csv',encoding='utf-8-sig')
