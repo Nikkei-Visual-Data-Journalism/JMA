@@ -8,7 +8,7 @@ heat = data[data.controlTitle == '熱中症警戒アラート'].reset_index(drop
 
 heat.targetDatetime = pd.to_datetime(heat.targetDatetime)
 
-jst = datetime.today() + timedelta(hours=3)
+jst = datetime.today() + timedelta(hours=9)
 
 heat = heat[heat.targetDatetime >= jst.strftime('%Y-%m-%d %H:00:00')].reset_index(drop=True)
 
