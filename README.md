@@ -25,3 +25,5 @@ yyyymmddHHMMSSは5分単位、UTC(JST+9)表記
 [土砂キキクル](https://www.jma.go.jp/bosai/risk/#elements:land/zoom:5/lat:35.012002/lon:135.000000/colordepth:normal)<br>
 https://www.jma.go.jp/bosai/jmatile/data/risk/yyyymmddHHMMSS/immed0/yyyymmddHHMMSS/surf/land/{z}/{x}/{y}.png
 
+[浸水キキクル](https://www.jma.go.jp/bosai/risk/#zoom:5/lat:35.012002/lon:135.000000/colordepth:normal/elements:inund)<br>
+https://www.jma.go.jp/bosai/jmatile/data/risk/yyyymmddHHMMSS/immed0/yyyymmddHHMMSS/surf/inund/{z}/{x}/{y}.png
