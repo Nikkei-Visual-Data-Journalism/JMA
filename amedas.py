@@ -20,6 +20,8 @@ temp = pd.concat([amedastable,amedas.set_index('amdno')['temp']],axis=1).dropna(
 
 temp.temp = [x[0] for x in temp.temp]
 
+temp = temp.rename(columns={'kjName':'地名','temp':'気温'})
+
 temp.to_csv('temp.csv',encoding='utf-8-sig')
 
 precipitation1h = pd.concat([amedastable,amedas.set_index('amdno')['precipitation1h']],axis=1).dropna(subset=['precipitation1h'])
