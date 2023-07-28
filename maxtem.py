@@ -18,4 +18,4 @@ df = df.rename(columns={'今日の最高気温(℃)':'気温'})
 
 df[['観測所','lat','lon','時間','気温']].to_csv('maxtem.csv',index=False,encoding='utf-8-sig')
 
-df[df['今年最高'] == '1'].reset_index(drop=True).to_csv('yearhigh.csv',index=False,encoding='utf-8-sig')
+df[df['今年最高'] == '1'].reset_index(drop=True)[['観測所','lat','lon','時間','気温']].to_csv('yearhigh.csv',index=False,encoding='utf-8-sig')
